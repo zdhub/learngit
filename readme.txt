@@ -20,3 +20,5 @@ remark:
 
 *******************远程仓库***********************
 1:注册一个GitHub账号，就可以免费获得Git远程仓库。创建key
+2:关联一个远程仓库，使用命令git remote add origin git@server-name:path/repo-name.git
+3:关联后，使用命令git push -u origin master，第一次推送master的所有分支，此后，每次本地递交后，只要有必要，就可以使用命令git push origin master
