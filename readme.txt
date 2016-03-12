@@ -16,10 +16,19 @@ remark:
 8:撤销修改
 	(1)git checkout --file   改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用此命令
 	(2)git reset  HEAD file  不仅改乱了工作区的内容，而且还提交到了暂存区，想丢弃修改，分两步，第一：使用此命令，第二：回到(1)
-	(3)已经提交到了版本库，想要撤销，回滚
+	(3)已经提交到了版本库，想要撤销，jj
 
 *******************远程仓库***********************
 1:注册一个GitHub账号，就可以免费获得Git远程仓库。创建key
 2:关联一个远程仓库，使用命令git remote add origin git@server-name:path/repo-name.git
 3:关联后，使用命令git push -u origin master，第一次推送master的所有分支，此后，每次本地递交后，只要有必要，就可以使用命令git push origin master
 4:从远程库克隆需要知道仓库的地址，然后使用git clone https://github.com/YiZhendong/gitskills.git这样的命令就可以.
+
+********************分支管理********************
+1:创建和合并分支
+	查看分支 git branch
+	创建分支 git branch <name>
+	切换分支 git checkout <name>
+	创建+切换分支 git checkout -b <name>
+	合并某分支到当前分支 git merge <name>
+	删除分支 git branch -d <name>
