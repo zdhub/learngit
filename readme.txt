@@ -2,4 +2,13 @@ hello this is a little test about git/11/3/2016
 git is a distributed version control system
 git is a free software
 
-实验汉字是否可以正确编
+remark:
+1:git init     		create a git res... use "git init"
+2:(1)git add 
+  (2)git commit 	add file to the repository:	(1)git add <file> (2)git commit
+3:"git status"		in order to get the stuation,use "git status"
+4:"git diff"		if the file has been modified,use "git diff"
+5:roll back
+  "git reset --hard commit_id"  we can use this command to go through the different version.
+  "git log"			we can use this command to check the history/  "git log --pretty=oneline" the short type
+  "git reflog" 			we can use this command to check the history
