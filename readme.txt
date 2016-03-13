@@ -33,5 +33,6 @@ remark:
 	合并某分支到当前分支 git merge <name>
 	删除分支 git branch -d <name>
 2:解决冲突
+	当git master和其他分支有冲突时，无法自动合并分支，先必须解决冲突。解决后再提交。
 	
 
