@@ -34,6 +34,7 @@ remark:
 	删除分支 git branch -d <name>
 2:解决冲突
 	当git master和其他分支有冲突时，无法自动合并分支，先必须解决冲突。解决后再提交。
-	
-	
+3:Fast forward下可能会在删除分支后，丢掉分支信息。如果强制禁用ff模式，git就会在merge时生成一个新的commit：git merge --no-ff -m "xxxx" dev  中的 --no-ff表示禁用 fast forward模式	
+4：bug分支
+	当当前工作还没提交时，有了bug，为了可以方便的解决bug，可以使用git stash来将当前现场储藏起来。可以使用git stash list来查看stash号码，用git stash apply（stash不删除）或者git stash pop（删除）来进行恢复。
 
