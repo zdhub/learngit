@@ -65,3 +65,10 @@ remark:
 	自己拥有Fork后的仓库的读写权限；
 	可以推送pull request给官方仓库来贡献代码(如果你希望bootstrap的官方库能接受你的修改，你就可以在GitHub上发起一个pull request)
 
+*******************自定义git********************
+1:颜色
+	 git config --global color.ui true  使git拥有醒目的颜色
+2:.gitignore
+	忽略某些文件时，需要编写.gitignore；
+	.gitignore文件本身要放到版本库里，并且可以对.gitignore做版本管理！
+
