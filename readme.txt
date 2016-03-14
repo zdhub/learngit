@@ -54,4 +54,9 @@ remark:
 	git tag 		可以查看所有标签
 	git tag -a <tagname> -m "blabla"	可以指定标签信息
 	git tag -s <tagname> -m "blabla"	可以用PGP签名标签
+2:操作标签
+	git push origin <tagname> 可以推送一个本地标签
+	git push origin tags	  可以推送所有本地标签
+	git tag -d <tagname>	  可以删除一个本地标签
+	git push origin :refs/tags/<tagname>  可以删除一个远程标签
 
