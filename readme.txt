@@ -60,3 +60,8 @@ remark:
 	git tag -d <tagname>	  可以删除一个本地标签
 	git push origin :refs/tags/<tagname>  可以删除一个远程标签
 
+*******************使用github********************
+	在GitHub上，可以任意Fork开源仓库(点“Fork”就在自己的账号下克隆了一个bootstrap仓库,然后，从自己的账号下clone)
+	自己拥有Fork后的仓库的读写权限；
+	可以推送pull request给官方仓库来贡献代码(如果你希望bootstrap的官方库能接受你的修改，你就可以在GitHub上发起一个pull request)
+
