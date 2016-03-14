@@ -46,3 +46,12 @@ remark:
 	建立本地和远程的分支的关联，使用git branch --set-upstream branch-name origin/branch-name
 	从远程抓取分支，使用git pull，如果有冲突，则先处理冲突
 
+********************标签管理*******************
+发布一个版本时，我们通常先在版本库中打一个标签，将来无论什么时候，取某个标签的版本，就是把那个打标签的时刻的历史版本取出来。所以，标签也是版本库的一个快照。
+
+1:创建标签
+	git tag <name>用于新建一个标签，默认为HEAD，也可以指定一个commit id
+	git tag 		可以查看所有标签
+	git tag -a <tagname> -m "blabla"	可以指定标签信息
+	git tag -s <tagname> -m "blabla"	可以用PGP签名标签
+
