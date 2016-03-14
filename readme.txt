@@ -39,5 +39,10 @@ remark:
 	当当前工作还没提交时，有了bug，为了可以方便的解决bug，可以使用git stash来将当前现场储藏起来。可以使用git stash list来查看stash号码，用git stash apply（stash不删除）或者git stash pop（删除）来进行恢复。
 5:feature分支
 	当实验一个新特性时，最好添加一个新的feature分支，在上面开发，修改，完成后再进行删除。 使用git branch -D xxxx进行删除
-
+6:多人协作
+	查看远程仓库-----   git remote -v
+	从本地推送分支----	git push origin branch-name，如果推送失败，先用git pull抓取新的远程的提交
+	在本地创建和远程分支对应的分支，使用 git checkout -b branch-name origin/branch，本地和远程的名字最好一样
+	建立本地和远程的分支的关联，使用git branch --set-upstream branch-name origin/branch-name
+	从远程抓取分支，使用git pull，如果有冲突，则先处理冲突
 
